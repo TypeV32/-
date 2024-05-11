@@ -1,0 +1,23 @@
+@import url('normalize.css');
+body {
+    background-color: black;
+    background-image: url(images/sale.jpg);
+}
+
+.sale {
+    text-align: center;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.sale_text {
+    width: 50%;
+    font-size: 40px;
+}
+
+.card_price {
+    font-size: 40px;
+}

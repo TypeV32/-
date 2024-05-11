@@ -1,0 +1,59 @@
+@import url('normalize.css');
+body {
+    background-image: url(images/basket.jpg);
+    background-size: cover
+}
+
+.Auth {
+    position: relative;
+    top: 40%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Auth__logo img {
+    width: 300px;
+    height: 100px;
+}
+
+.Auth__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Auth__form {
+    width: 750px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.flat {
+    width: 750px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+}
+
+button {
+    border-radius: 8px;
+    background-color: #5780EA;
+    color: white
+}
+
+input {
+    width: 100%;
+    height: 25px;
+    border-radius: 8px;
+    background-color: white;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Отзывы</title>  
+<style>  
+    body {  
+        font-family: Arial, sans-serif;  
+        background-color: #01579b;  
+        margin: 0;  
+        padding: 0;  
+    }  
+    .container {  
+        max-width: 800px;  
+        margin: 0 auto;  
+        padding: 20px;  
+    }  
+    h1 {  
+        text-align: center;  
+    }  
+    .review-form {  
+        background-color: #ffffff;  
+        padding: 20px;  
+        border-radius: 5px;  
+        margin-top: 20px;  
+    }  
+    .review-form label {  
+        display: block;  
+        margin-bottom: 10px;  
+    }  
+    .review-form input[type="text"] {  
+        width: 100%;  
+        padding: 5px;  
+        margin-bottom: 10px;  
+    }  
+    .review-form textarea {  
+        width: 100%;  
+        padding: 5px;  
+        margin-bottom: 10px;  
+    }  
+    .review-form button {  
+        padding: 10px 20px;  
+        background-color: black;  
+        color: #ffffff;  
+        border: none;  
+        border-radius: 5px;  
+        cursor: pointer;  
+    }  
+    .reviews {  
+        margin-top: 20px;  
+    }  
+    .review {  
+        background-color: #ffffff;  
+        padding: 10px;  
+        margin-bottom: 10px;  
+        border-radius: 5px;  
+    }  
+    .back-button {  
+        display: block;  
+        margin-top: 20px;  
+        text-align: center;  
+    }  
+    .back-button a {  
+        padding: 10px 20px;  
+        background-color: black;  
+        color: #ffffff;  
+        text-decoration: none;  
+        border-radius: 5px;  
+    }  
+</style>  
+</head>  
+<body>  
+<div class="container">  
+    <h1>Отзывы</h1>  
+    <div class="review-form">  
+        <form id="reviewForm">  
+            <label for="name">Имя:</label>  
+            <input type="text" id="name" name="name">  
+            <label for="rating">Рейтинг:</label>  
+            <input type="number" id="rating" name="rating" min="1" max="5">  
+            <label for="comment">Отзыв:</label>  
+            <textarea id="comment" name="comment" rows="4"></textarea>  
+            <button type="submit">Отправить</button>  
+        </form>  
+    </div>  
+    <div class="reviews">  
+        <div class="review">  
+            <strong>Приказчиков Иван</strong> - ★★★★★  
+            <p>Отличный товар, спасибо!</p>  
+        </div>  
+        <div class="review">  
+            <strong>Степаненко Денис</strong> - ★★★★☆  
+            <p>Немного разочарован качеством, но все хорошо.</p>  
+        </div>  
+    </div>  
+    <div class="back-button">  
+        <a href="Index.html">На главную</a>  
+    </div>  
+</div>  
+<script>  
+    document.getElementById('reviewForm').addEventListener('submit', function(event) {  
+        event.preventDefault();  
+        alert('Спасибо за ваш отзыв!');  
+    });  
+</script>  
+</body>  
+</html>
+

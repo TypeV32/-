@@ -1,0 +1,96 @@
+@import url('normalize.css');
+body {
+    background-color: black;
+}
+
+.navigation__links {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.navigation {
+    width: 100%;
+    height: 150px;
+    background-color: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    background-image: url(images/avatar1.jpg);
+}
+
+a {
+    text-decoration: none;
+    color: darkorchid;
+}
+
+.navigation img {
+    padding-left: 100px;
+    padding-right: 800px;
+    width: 200px;
+    height: 70px;
+}
+
+.HyperX {
+    border: 2px groove brown;
+    margin: 50px;
+    padding: 50px 30px 500px 30px;
+    font-size: 20px;
+    font-family: 'David Libre', serif;
+    background-color: black;
+    background-size: cover;
+    text-align: center;
+    color: purple;
+}
+
+.Logitech {
+    border: 2px groove lightskyblue;
+    margin: 50px;
+    padding: 50px 30px 500px 30px;
+    font-size: 20px;
+    font-family: 'David Libre', serif;
+    background-color: black;
+    background-size: cover;
+    text-align: center;
+    color: lightskyblue;
+}
+
+.Razer {
+    border: 2px groove lightgreen;
+    margin: 50px;
+    padding: 50px 30px 500px 30px;
+    font-size: 20px;
+    font-family: 'David Libre', serif;
+    background-color: black;
+    text-align: center;
+    color: lightgreen;
+}
+
+.Varmilo {
+    border: 2px groove teal;
+    margin: 50px;
+    padding: 50px 30px 500px 30px;
+    font-size: 20px;
+    font-family: 'David Libre', serif;
+    background-color: black;
+    text-align: center;
+    color: teal;
+}
+
+.Apex_Pro {
+    border: 2px groove magenta;
+    margin: 50px;
+    padding: 50px 30px 500px 30px;
+    font-size: 20px;
+    font-family: 'David Libre', serif;
+    background-color: black;
+    text-align: center;
+    color: magenta
+}
+
+img {
+    width: 70%;
+    height: 60%;
+}

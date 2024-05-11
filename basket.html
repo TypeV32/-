@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="basket.css">
+</head>
+
+<body>
+    <div class="basket">
+        <div class="basket__form">
+            <div class="basket__logo">
+                <a href="Index.html"><img src="images/LOGO .png" alt="logo"></a>
+                <p>Ваши товары</p>
+            </div>
+
+            <div class="card">
+                <img width="250" height="200" src="images/apex1.png" alt="">
+                <p>SteelSeries Apex Pro TKL(механическая)</p>
+                <p>22 999₽</p>
+            </div>
+            <div class="card">
+                <img width="250" height="200" src="images/hypexred.jpg" alt="">
+                <p>HyperX Pulsefire Dart</p>
+                <p>5 390₽</p>
+            </div>
+            <div class="card">
+                <img width="250" height="200" src="images/headphone1.jpg" alt="">
+                <p>Kingston HyperX Cloud Revolver</p>
+                <p>12 000₽</p>
+            </div>
+
+            <div class="button">
+                <button type="submit" onclick="goToCheckout()">Перейти к оформлению</button>
+            </div>
+        </div>
+    </div>
+     
+    <script> 
+        window.onload = function() { 
+            let cards = document.getElementsByClassName('card'); 
+            let total = 0; 
+            for (let card of cards){ 
+                let price = parseInt(card.getElementsByTagName('p')[2].innerText.replace(/[^\d]/g, '')); 
+                total += price; 
+            } 
+ 
+            let totalElement = document.createElement('p'); 
+            totalElement.innerText = `Итого: ${total.toLocaleString()}₽`; 
+            totalElement.style.fontWeight = 'bold'; 
+            document.getElementsByClassName('basket__form')[0].appendChild(totalElement); 
+        }
+
+        function goToCheckout() {
+            window.location.href = '534534.html'; // Замените 'checkout.html' на ссылку на страницу оформления
+        }
+    </script>   
+
+</body>
+
+</html>

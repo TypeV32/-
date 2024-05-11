@@ -1,0 +1,16 @@
+@import url('normalize.css');
+.monitors {
+    border: 3px groove brown;
+    margin: 10px;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    font-family: 'David Libre', serif;
+    background-color: black;
+    background-size: cover;
+    text-align: center;
+    color: purple;
+}
+
+body {
+    background-color: black;
+}

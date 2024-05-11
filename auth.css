@@ -1,0 +1,70 @@
+@import url('normalize.css');
+body {
+    background-image: url(images/gold1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right 70% top 35%;
+}
+
+.Auth {
+    position: relative;
+    top: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Auth__logo img {
+    width: 200px;
+    height: 100px;
+}
+
+.Auth__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Auth__form {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+button {
+    background: #5780EA;
+    height: 30px;
+    border-radius: 8px;
+    color: white
+}
+
+button:first-child {
+    width: 18%;
+}
+
+button:nth-child(3) {
+    width: 65%;
+}
+
+input {
+    background-color: rgba(#5780EA, 0.4);
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+}
+
+.click {
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.click span {
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: bold;
+}

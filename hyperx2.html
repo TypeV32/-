@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>HyperX</title> 
+    <link rel="stylesheet" href="hyperx2.css"> 
+    <link rel="shortcut icon" href="images/cait.png" type="images/png"> 
+</head> 
+
+<body> 
+    <div class="HyperX"> 
+        <h1>HyperX Pulsefire Dart</h1> 
+        <p> Игровая: да </p> 
+        <p> Принцип работы: оптическая светодиодная</p> 
+        <p> Разрешение оптического сенсора: 16000 dpi</p> 
+        <p> Интерфейс подключения: USB 2.0 </p> 
+        <p> Длина провода: 1.8 м</p> 
+        <p> Количество клавиш: 11 (программируемых 11)</p> 
+        <p> Дизайн: для правой</p> 
+        <p> Вес: 125 г</p> 
+        <button id="addToCartBtn" type="submit">Добавить в Корзину</button> 
+    </div> 
+
+    <script>
+        const addToCartBtn = document.getElementById('addToCartBtn');
+        addToCartBtn.addEventListener('click', function() {
+            alert('Товар добавлен в корзину');
+            window.location.href = 'index.html'; 
+        });
+    </script>
+</body> 
+
+</html>
